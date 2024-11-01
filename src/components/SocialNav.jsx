@@ -4,10 +4,10 @@ import { MdEmail } from "react-icons/md";
 
 function SocialNav() {
     return (
-        <nav>
-            <FaGithubSquare />
-            <FaLinkedin />
-            <MdEmail />
+        <nav className="flex gap-3 text-slate-300 mt-4">
+            <FaGithubSquare size={25}/>
+            <FaLinkedin size={25}/>
+            <MdEmail size={25}/>
         </nav>
     )
 }
