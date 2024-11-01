@@ -2,7 +2,7 @@ import Button from './Button'
 
 function Card() {
     return(
-        <div>
+        <div className='glow-capture'>
             <img/>
             <h4>React Quiz</h4>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
