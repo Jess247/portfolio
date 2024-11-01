@@ -1,6 +1,8 @@
 import Header from "./components/Header"
 import About from "./components/About"
 import Card from "./components/Card"
+import Contact from "./components/Contact"
+
 function App() {
 
   return (
@@ -8,6 +10,7 @@ function App() {
       <Header/>
       <About/>
       <Card/>
+      <Contact/>
     </>
   )
 }
