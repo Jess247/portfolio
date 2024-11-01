@@ -1,6 +1,6 @@
 function Badge({badgeText}){
     return(
-        <div>
+        <div >
             {badgeText}
         </div>
     )
