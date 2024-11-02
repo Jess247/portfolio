@@ -22,7 +22,7 @@ function Contact() {
                     className="block"
                     >Message
                 </label>
-                <textarea id="message" rows="4" class="block p-2.5 w-full max-w-[600px] text-sm text-gray-900 font-light bg-transparent rounded-lg border border-white focus:ring-blue-500 focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+                <textarea id="message" rows="4" className="block p-2.5 w-full max-w-[600px] text-sm text-gray-900 font-light bg-transparent rounded-lg border border-white focus:ring-blue-500 focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
             </form>
         </section>
     )
