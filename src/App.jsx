@@ -34,21 +34,25 @@ function App() {
         altText: "Project thumbnail.",
         description: "lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
         code: "https://github.com",
-        url: "https:gorgeous-horse-d3973b.netlify.app/",
+        url: "https://gorgeous-horse-d3973b.netlify.app/",
         skills: ["HTML5", "SASS/CSS","JavaScript", "React", "API"]
       },
     ]
 
   return (
-    <div className="text-white p-8 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_55%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-      <Header/>
-      <About/>
-      <div className="my-16">
-        <h3 className="text-xl uppercase font-semibold tracking-wider">Projects</h3>
-        {projects.map(project => <Card key={project.id} name={project.name} description={project.description} imgSrc={project.img} altText={project.altText} code={project.code} url={project.url} skills={project.skills}/>)}
+    <div className="text-white p-8 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_55%,rgba(120,119,198,0.3),rgba(255,255,255,0))] md:flex md:px-24">
+      <div className="md:h-screen md:top-0 md:left-0 md:w-[800px] md:sticky md:pt-24">
+        <Header/>
       </div>
-      <Contact/>
-      <Footer/>
+      <div className="md:my-8">
+        <About/>
+        <div className="my-16">
+          <h3 className="text-xl uppercase font-semibold tracking-wider">Projects</h3>
+          {projects.map(project => <Card key={project.id} name={project.name} description={project.description} imgSrc={project.img} altText={project.altText} code={project.code} url={project.url} skills={project.skills}/>)}
+        </div>
+        <Contact/>
+        <Footer/>
+      </div>
     </div>
   )
 }
