@@ -38,7 +38,7 @@ function App() {
         description: "lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
         code: "https://github.com",
         url: "https://gorgeous-horse-d3973b.netlify.app/",
-        skills: ["HTML5", "SASS/CSS","JavaScript", "React", "API"]
+        skills: ["HTML5", "SASS/CSS","JavaScript", "API"]
       },
     ]
 
