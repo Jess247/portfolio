@@ -1,6 +1,6 @@
 function Contact() {
     return(
-        <section>
+        <section className="mb-24">
             <h4 className="text-xl font-semibold uppercase leading-relaxed tracking-wider">Contact</h4>
             <p className="font-thin mt-4">
                 Any questions? Get in touch via social media or through the form below.
