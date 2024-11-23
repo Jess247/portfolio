@@ -43,19 +43,21 @@ function App() {
     ]
 
   return (
-    <div className="text-white p-8 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_55%,rgba(120,119,198,0.3),rgba(255,255,255,0))] md:flex md:px-24">
-      <div className="md:h-screen md:top-0 md:left-0 md:w-[800px] md:sticky md:pt-24">
-        <Header/>
-      </div>
-      <div className="md:my-8">
-        <About/>
-        <div className="my-16">
-          <h3 className="text-xl uppercase font-semibold tracking-wider">Projects</h3>
-          {projects.map(project => <Card key={project.id} name={project.name} description={project.description} imgSrc={project.img} altText={project.altText} code={project.code} url={project.url} skills={project.skills}/>)}
+    <div className="text-white p-8 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_55%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+      <div class="lg:flex">
+        <div className="lg:h-screen lg:top-0 md:left-0 lg:w-[800px] lg:sticky lg:pt-24">
+          <Header/>
         </div>
-        <Contact/>
-        <Footer/>
+        <div className="lg:my-8">
+          <About/>
+          <div className="my-16">
+            <h3 className="text-xl uppercase font-semibold tracking-wider">Projects</h3>
+            {projects.map(project => <Card key={project.id} name={project.name} description={project.description} imgSrc={project.img} altText={project.altText} code={project.code} url={project.url} skills={project.skills}/>)}
+          </div>
+          <Contact/>
+        </div>
       </div>
+        <Footer/>
     </div>
   )
 }
